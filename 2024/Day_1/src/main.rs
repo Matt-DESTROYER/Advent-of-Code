@@ -17,7 +17,7 @@ fn part1(mut list1: Vec<i32>, mut list2: Vec<i32>) {
         sum += (list1[i] - list2[i]).abs();
     }
 
-    File::create("../output.part1.txt")
+    File::create("./output.part1.txt")
         .expect("Error creating file")
         .write_all(sum.to_string().as_bytes())
         .expect("Error writing to file");
@@ -43,7 +43,7 @@ fn part2(mut list1: Vec<i32>, mut list2: Vec<i32>) {
         map.insert(list1[i], list1[i]*count);
     }
 
-    File::create("../output.part2.txt")
+    File::create("./output.part2.txt")
         .expect("Error creating file")
         .write_all(sum.to_string().as_bytes())
         .expect("Error writing to file");
